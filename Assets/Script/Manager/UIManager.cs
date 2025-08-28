@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] UIMainMenu uiMain;
     [SerializeField] UIInventory uiInven;
     [SerializeField] UIStatus uiStatus;
+
+    
 
     public UIMainMenu UIMain { get { return uiMain; } }
     public UIInventory UIInventory { get { return uiInven; } }
@@ -25,6 +28,4 @@ public class UIManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-
 }
